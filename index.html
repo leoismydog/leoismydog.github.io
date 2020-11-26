@@ -84,15 +84,19 @@
      
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-    var newpar = $("<p>")
-    newpar.text("doop doop").css("color", "green").appendTo("body")
-    var button = $("#orangejuice")
-    $("#orangejuice").on("click", function() {
-        $("span").text("orange juice").css("color", "orange")
-        $(button).text("Yay! Reload the page to return to normal").css("color", "purple").css("background-color", "green")
-        $("span").hide()
-        $("span").slideDown(2000)
-    })
+        //var newpar = $("<p>")
+        //newpar.text("doop doop").css("color", "green").appendTo("body")
+        var slidedown = "yes"
+        var button = $("#orangejuice")
+        $("#orangejuice").on("click", function() {
+            $("span").text("orange juice").css("color", "orange")
+            $(button).text("Yay! Reload the page to return to normal").css("color", "purple").css("background-color", "green")
+            if(slidedown === "yes"){
+                $("span").hide()
+                $("span").slideDown(2000)
+                slidedown = "no"
+            }
+        })
     </script>
     </body>
 </html>
