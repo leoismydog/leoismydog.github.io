@@ -89,7 +89,7 @@
         //var newpar = $("<p>")
         //newpar.text("doop doop").css("color", "green").appendTo("body")
         var slidedown = "yes"
-        var newbla = $("<p>")
+        var newbla = $("<p>").text("bla ")
         var button = $("#orangejuice")
         $("#orangejuice").on("click", function() {
             $("span").text("orange juice").css("color", "orange")
@@ -100,7 +100,7 @@
                 slidedown = "no"
             }
             $("#bla").on("click", function() {
-            $("newbla").appendTo("body")
+                $("newbla").appendTo("body")
         })
     </script>
     </body>
