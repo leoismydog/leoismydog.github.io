@@ -89,8 +89,8 @@
         //var newpar = $("<p>")
         //newpar.text("doop doop").css("color", "green").appendTo("body")
         var slidedown = "yes"
+        var newbla = $("<p>")
         var button = $("#orangejuice")
-        var bla = $("#bla")
         $("#orangejuice").on("click", function() {
             $("span").text("orange juice").css("color", "orange")
             $(button).text("Yay! Reload the page to return to normal").css("color", "purple").css("background-color", "green")
@@ -100,7 +100,6 @@
                 slidedown = "no"
             }
             $("#bla").on("click", function() {
-            var newbla = $("<p>").text("bla ").css("color", "brown")
             $("newbla").appendTo("body")
         })
     </script>
