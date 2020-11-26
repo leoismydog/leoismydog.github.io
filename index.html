@@ -86,7 +86,9 @@
     <script>
     var newpar = $("<p>")
     newpar.text("doop doop").css("color", "green").appendTo("body")
-    <!--$("#orangejuice").on("click","")-->
+    $("#orangejuice").on("click", function() {
+        $("span").text("orange juice").css("color", "orange")
+    })
     </script>
     </body>
 </html>
