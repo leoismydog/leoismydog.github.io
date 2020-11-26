@@ -96,11 +96,11 @@
                 slidedown = "no"
             }
             var oneimg = $("<img>")
-            oneimg.attr("src", "https://s0.2mdn.net/6475642/11232020-125511334-728x90.jpg").addClass("fo")
+            oneimg.attr("src", "https://s0.2mdn.net/6475642/11232020-125511334-728x90.jpg").addClass("fo").appendTo("body")
             var twoimg = $("<img>")
-            twoimg.attr("src", "https://s0.2mdn.net/8263337/UK_Off_M2_GDN_728x90.png").addClass("fo")
+            twoimg.attr("src", "https://s0.2mdn.net/8263337/UK_Off_M2_GDN_728x90.png").addClass("fo").appendTo("body")
             var threeimg = $("<img>")
-            threeimg.attr("src", "https://s0.2mdn.net/8263337/UK_Off_M1_GDN_728x90.png").addClass("fo")
+            threeimg.attr("src", "https://s0.2mdn.net/8263337/UK_Off_M1_GDN_728x90.png").addClass("fo").appendTo("body")
             $(".fo").click(function(){
     $(this).fadeOut(1000);
   })
