@@ -44,7 +44,7 @@
             <li><a href="#qa">Q&A</a>
             
         </ul>
-    <h1>Our lemonade stand</h1>
+    <h1>Our <span class="lem">lemonade</span> stand</h1>
     
     <h2 id="info-lemonade">Basic info</h2>
     
@@ -88,6 +88,7 @@
     newpar.text("doop doop").css("color", "green").appendTo("body")
     $("#orangejuice").on("click", function() {
         $("span").text("orange juice").css("color", "orange")
+        $("#orangejuice").text("Yay! Reload the page to return to normal").css("color", "purple")
     })
     </script>
     </body>
