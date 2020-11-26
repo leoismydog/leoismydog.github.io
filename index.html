@@ -79,7 +79,9 @@
        
     
     <img src="https://cdn.pixabay.com/photo/2014/11/01/01/00/lemons-511479_960_720.png" alt="Lemons" class="pic"> 
-        <p><br>credit: <a target="_blank" href="https://pixabay.com/vectors/lemons-yellow-fruit-citrus-food-511479/"> here</a></p>
+        <p><br>credit: <a target="_blank" href="https://pixabay.com/vectors/lemons-yellow-fruit-citrus-food-511479/"> here</a></p><br>
+        
+        <button id="bla">Bla</button>
    
      
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -88,6 +90,7 @@
         //newpar.text("doop doop").css("color", "green").appendTo("body")
         var slidedown = "yes"
         var button = $("#orangejuice")
+        var bla = $("#bla")
         $("#orangejuice").on("click", function() {
             $("span").text("orange juice").css("color", "orange")
             $(button).text("Yay! Reload the page to return to normal").css("color", "purple").css("background-color", "green")
@@ -96,6 +99,9 @@
                 $("span").slideDown(1000)
                 slidedown = "no"
             }
+            $("#bla").on("click", function() {
+            var newbla = $("<p>").text("bla ").css("color", "brown")
+            $("newbla").appendTo("body")
         })
     </script>
     </body>
