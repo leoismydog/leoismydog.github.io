@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
         <style>
         body {
-            font-size: 100em;
+            font-size: 14px;
             }
             
         h2 {
@@ -17,9 +17,9 @@
         li {
             list-style-type: square;
         }
-        <!--#qa {
+        #qa {
             font-family: 'Piedra', cursive;
-            }-->
+            }
         h1 {
             
             font: "serif";
@@ -33,19 +33,20 @@
        
         .pic {
             width: 200px;
-        
+        }
         </style>
     </head>
     <body>
+        <button id="animateBody">animate</button>
+        
         <h1>Table of contents<br></h1>
         <ul>
-            <li><a href="#info-lemonade">Basic Info</a>
-            <li><a href="#Location">Location</a>
-            <li><a href="#history">History</a>
-            <li><a href="#timendate">Date and Time</a>
-            <li><a href="#qa">Q&A</a>
-            
-        </ul>
+            <li><a href="#info-lemonade">Basic Info</a></li>
+            <li><a href="#Location">Location</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#timendate">Date and Time</a></li>
+            <li><a href="#qa">Q&A</a></li>
+         </ul>
     <h1>Our <span class="lem">lemonade</span> stand</h1>
     
     <h2 id="info-lemonade">Basic info</h2>
@@ -68,29 +69,24 @@
 <a target="_blank" href="https://www.kidsfoodbasket.org/locations/muskegon/">2020: Kid's Food Basket<br></a></p>
         <h2 id="qa"><br>Q&A</h2> 
         <ol>
-            <li>What charity are you donating to this year?  <em> Not sure yet</em>
+            <li>What charity are you donating to this year?  <em> Not sure yet</em></li>
         </ol>
-        <!--<form action="mailto:**************@gmail.com" method="POST">
-        <input type="text" value="type your question here!">
-        <input type="submit">
-        </form>
-        <p><br>You might need to reload the page a couple times</p>
-        <p>Some computers cannot do this.</p> -->
         
-        
-       
-    
-    <img src="https://cdn.pixabay.com/photo/2014/11/01/01/00/lemons-511479_960_720.png" alt="Lemons" class="pic"> 
+        <img src="https://cdn.pixabay.com/photo/2014/11/01/01/00/lemons-511479_960_720.png" alt="Lemons" class="pic"> 
         <p><br>credit: <a target="_blank" href="https://pixabay.com/vectors/lemons-yellow-fruit-citrus-food-511479/"> here</a></p><br>
         <br>
-        <a target="_blank" href="./bookReviews">another website i am working on</a>
-        <></button>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/5.3.1/jquery.min.js"></script>
-    <script>
         
-         $("body").animate({"font-size":50em}, "slow");
-         $("body").animate({"font-size":100em}, "slow");
-            
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        var animateThis = function() {
+         $("body").animate({"font-size":"1px"}, "slow");
+         $("body").animate({"font-size":"27px"}, "slow");
+         $("body").animate({"font-size":"14px"}, "slow");
+        }
+        animateThis()
+        $("#animateBody").on("click", function() {
+            animateThis()
+        })
     </script>
     </body>
 </html>
