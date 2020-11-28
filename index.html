@@ -8,6 +8,7 @@
         <style>
         body {
             font-size: 14px;
+            font-family: serif;
             }
             
         h2 {
@@ -17,9 +18,7 @@
         li {
             list-style-type: square;
         }
-        #qa {
-            font-family: 'Piedra', cursive;
-            }
+        
         h1 {
             
             font: "serif";
@@ -33,12 +32,12 @@
        
         .pic {
             width: 200px;
+            left: 10px;
         }
         </style>
     </head>
     <body>
         <button id="animateBody">animate</button>
-        
         <h1>Table of contents<br></h1>
         <ul>
             <li><a href="#info-lemonade">Basic Info</a></li>
@@ -71,22 +70,35 @@
         <ol>
             <li>What charity are you donating to this year?  <em> Not sure yet</em></li>
         </ol>
+        <!--<form action="mailto:**************@gmail.com" method="POST">
+        <input type="text" value="type your question here!">
+        <input type="submit">
+        </form>
+        <p><br>You might need to reload the page a couple times</p>
+        <p>Some computers cannot do this.</p> -->
         
-        <img src="https://cdn.pixabay.com/photo/2014/11/01/01/00/lemons-511479_960_720.png" alt="Lemons" class="pic"> 
+        
+       
+    
+    <img src="https://cdn.pixabay.com/photo/2014/11/01/01/00/lemons-511479_960_720.png" alt="Lemons" class="pic"> 
         <p><br>credit: <a target="_blank" href="https://pixabay.com/vectors/lemons-yellow-fruit-citrus-food-511479/"> here</a></p><br>
         <br>
         
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
         var animateThis = function() {
-         $("body").animate({"font-size":"1px"}, "slow");
-         $("body").animate({"font-size":"27px"}, "slow");
-         $("body").animate({"font-size":"14px"}, "slow");
-        }
+         $("body").animate({"font-size":"1px"}, 2000);
+         $("body").animate({"font-size":"27px"}, 2000);
+         $("body").animate({"font-size":"14px"}, 2000);
+         $(".pic").animate({"left":"50px"}, 2000)
+         $(".pic").animate({"left":"10px"}, 2000)
+         $("body").fadeOut(2000)
+         $("body").fadeIn(2000)
         animateThis()
         $("#animateBody").on("click", function() {
             animateThis()
         })
+            
     </script>
     </body>
 </html>
